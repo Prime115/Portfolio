@@ -1,0 +1,45 @@
+body {
+    background: #04050D;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Gemensamt för alla stjärnor */
+.star {
+    position: absolute;
+    background: #D9D9D9;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: blink 2s infinite alternate;
+}
+
+/* Blink-animation */
+@keyframes blink {
+    0% { opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+.falling-star {
+    position: absolute;
+    width: 2px;         /* tjocklek på stjärnfall */
+    height: 80px;       /* längd på stjärnfall */
+    background: linear-gradient(white, transparent);
+    opacity: 0;
+    transform: rotate(45deg); /* diagonal riktning */
+    pointer-events: none;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) rotate(45deg);
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(500px, 500px) rotate(45deg); /* slutposition */
+    }
+}

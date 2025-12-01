@@ -1,0 +1,41 @@
+.status-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #13E200; /* grön */
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.navbar{
+    background-blend-mode: darken;
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "a b c";
+    position: fixed;
+    top: 0;          /* Alltid längst upp */
+    left: 0;
+    height: 5vw;
+    align-items: center;
+    border-bottom: solid thin #2F3551;
+    backdrop-filter: blur(0.1vw);
+
+}
+.nav-link {
+    color: #d9d9d9;
+
+}
+.item:nth-child(1) {
+    justify-self: left;
+    padding-left: 1vw;
+}
+.item:nth-child(2) {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.item:nth-child(3) {
+    justify-self: right;
+    padding-right: 1vw;
+}
