@@ -24,22 +24,22 @@ body {
     position: absolute;
     width: 2px;         /* tjocklek på stjärnfall */
     height: 80px;       /* längd på stjärnfall */
-    background: linear-gradient(white, transparent);
+    background: linear-gradient(#d9d9d9, transparent);
     opacity: 0;
-    transform: rotate(45deg); /* diagonal riktning */
+    transform: rotate(135deg); /* diagonal riktning */
     pointer-events: none;
 }
 
 @keyframes fall {
     0% {
         opacity: 1;
-        transform: translate(0, 0) rotate(45deg);
+        transform: translate(0, 0) rotate(135deg);
     }
     80% {
-        opacity: 1;
+        opacity: 0.5;
     }
     100% {
         opacity: 0;
-        transform: translate(500px, 500px) rotate(45deg); /* slutposition */
+        transform: translate(17vw, 17vw) rotate(135deg); /* slutposition */
     }
 }
