@@ -12,6 +12,7 @@ function App() {
       <>
           <Stars count={150} />
           <FallingStar></FallingStar>
+
           <NavBar/>
           <main className ="main-content">
               <Routes>
