@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import "../styles/stars.css";
-
+import { motion, useScroll, useTransform } from "framer-motion";
 const columns = 10;
 const rows = 10;
 const count = columns * rows;
 
 export default function Stars() {
+    const {scrollY} = useScroll();
+    const y =useTransform(scrollY, [0,1000], [0,-50])
     const [starData, setStarData] = useState([]);
 
     useEffect(() => {
@@ -21,13 +23,13 @@ export default function Stars() {
                 const col = i % columns;
 
                 // slump inom grid-cell (inte precis i hörnet)
-                const x = (col + Math.random() * 0.8 + 0.1) / columns * 100;
-                const y = (row + Math.random() * 0.8 + 0.1) / rows * 100;
+                const xStar = (col + Math.random() * 0.8 + 0.1) / columns * 100;
+                const yStar = (row + Math.random() * 0.8 + 0.1) / rows * 100;
 
                 const size = Math.random() < 0.5 ? 1 : 2; // två storlekar
                 const duration = 2 + Math.random() * 3;    // blinkning 2-5s
 
-                return { top: y, left: x, size, duration };
+                return { top: yStar, left: xStar, size, duration };
             });
 
             localStorage.setItem("star", JSON.stringify(data)); // spara lokalt
@@ -36,7 +38,7 @@ export default function Stars() {
     }, []);
 
     return (
-        <>
+        <motion.div className="stars-wrapper" style={{ y }}>
             {starData.map((star, i) => (
                 <div
                     key={i}
@@ -50,6 +52,6 @@ export default function Stars() {
                     }}
                 />
             ))}
-        </>
+        </motion.div>
     );
 }

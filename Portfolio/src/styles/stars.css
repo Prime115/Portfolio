@@ -13,6 +13,17 @@ body {
     opacity: 0.8;
     animation: blink 2s infinite alternate;
 }
+.stars-wrapper {
+    position: fixed;       /* Stays in place relative to the viewport */
+    top: 0;
+    left: 0;
+    width: 100vw;          /* Full width of the viewport */
+    height: 100vh;         /* Full height of the viewport */
+    pointer-events: none;  /* Lets clicks pass through, so stars don’t block interactions */
+    z-index: 0;            /* Makes sure stars stay behind your main content */
+    overflow: hidden;      /* Prevent stars from spilling outside the container */
+}
+
 
 /* Blink-animation */
 @keyframes blink {

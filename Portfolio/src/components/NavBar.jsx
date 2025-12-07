@@ -1,25 +1,23 @@
 import CurrentLocation from "./CurrentLocation.jsx";
-import {Link} from "react-router-dom";
-
 
 function NavBar() {
     return (
         <header>
             <nav className="navbar">
                 <div className="item">
-                    <Link className={"nav-link"} to={"/"}>Omar Lundgren</Link>
+                    <a className="nav-link" href="#home">Omar Lundgren</a>
                 </div>
                 <div className="item">
-                    <Link className={"nav-link"} to={"/about"}>About</Link>
-                    <Link className={"nav-link"} to={"/projects"}>Projects</Link>
-                    <Link className={"nav-link"} to={"/contact"}>Contact</Link>
+                    <a className="nav-link" href="#about">About</a>
+                    <a className="nav-link" href="#projects">Projects</a>
+                    <a className="nav-link" href="#contact">Contact</a>
                 </div>
                 <div className="item">
-                    <CurrentLocation/>
+                    <CurrentLocation />
                 </div>
             </nav>
         </header>
-
     )
 }
+
 export default NavBar;

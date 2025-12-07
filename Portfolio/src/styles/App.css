@@ -3,6 +3,12 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
+
+}
+
+
+section {
+  min-height: 100vh; /* each section fills the screen */
 }
 
 .logo {
