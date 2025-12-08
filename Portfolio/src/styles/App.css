@@ -8,7 +8,7 @@
 
 
 section {
-  min-height: 100vh; /* each section fills the screen */
+  height: 40vw; /* each section fills the screen */
 }
 
 .logo {

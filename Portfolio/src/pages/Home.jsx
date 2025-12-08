@@ -12,7 +12,7 @@ function Home() {
                         "Designer."
                     ]}
                     speed={80}
-                    pause={1200}
+                    pause={1200}    
                 />
             </div>
             <motion.div className="scrollIndicator" animate={{ y: [0,10,0]}}

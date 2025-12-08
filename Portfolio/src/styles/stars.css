@@ -12,6 +12,7 @@ body {
     border-radius: 50%;
     opacity: 0.8;
     animation: blink 2s infinite alternate;
+    z-index: 0;
 }
 .stars-wrapper {
     position: fixed;       /* Stays in place relative to the viewport */

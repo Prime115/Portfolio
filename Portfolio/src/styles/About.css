@@ -1,3 +1,26 @@
-.about {
-    height: 1000px;
+.aboutCards {
+    display: grid;
+    grid-template-columns: 12vw 12vw 12vw 12vw ;
+    gap: 10vw;
+    justify-content: center;
+    width:50vw;
+
+
+}
+.about{
+    justify-items: center;
+}
+.card{
+    height: 10vw;
+    width: 100%;
+    border-radius: 15px;
+    justify-self: center;
+    background: linear-gradient(#1A1B25,#10121C) ;
+    z-index: 1;
+
+}
+p {
+    width: 50%;
+
+    margin-bottom:4vw
 }

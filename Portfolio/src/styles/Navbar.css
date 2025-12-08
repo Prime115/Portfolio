@@ -9,6 +9,7 @@
 header {
     height: 5vw;
     width: 100vw;
+
 }
 .navbar{
     background-blend-mode: darken;
@@ -23,7 +24,7 @@ header {
     border-bottom: solid thin #2F3551;
     backdrop-filter: blur(0.1vw);
     height: 5vw;
-
+    z-index: 1000;
 }
 .nav-link {
     color: #d9d9d9;

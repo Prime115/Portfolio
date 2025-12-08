@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     opacity: 100%;
+    margin-bottom:2vw ;
 }
 .scrollLine {
     height: 30%;
@@ -23,5 +24,5 @@
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     align-items: end;
-    height: 35vw;
+    height: 100%;
 }
