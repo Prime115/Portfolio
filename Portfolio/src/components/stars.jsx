@@ -5,7 +5,7 @@ const columns = 10;
 const rows = 10;
 const count = columns * rows;
 
-export default function Stars() {
+export default function Stars( { offset = 0 }) {
     const {scrollY} = useScroll();
     const y =useTransform(scrollY, [0,5000], [0,-220])
     const [starData, setStarData] = useState([]);
@@ -38,6 +38,7 @@ export default function Stars() {
     }, []);
 
     return (
+
         <motion.div className="stars-wrapper" style={{ y }}>
             {starData.map((star, i) => (
                 <div
@@ -49,9 +50,12 @@ export default function Stars() {
                         top: `${star.top}%`,
                         left: `${star.left}%`,
                         animationDuration: `${star.duration}s`,
+                        transform: `translateY(${offset * 100}vh)`
                     }}
                 />
             ))}
+
+
         </motion.div>
     );
 }

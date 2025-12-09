@@ -8,14 +8,15 @@ import FallingStar from "./components/fallingStar.jsx";
 function App() {
     return (
         <>
-            <Stars count={150} />
             <FallingStar />
             <NavBar />
             <main className="main-content">
                 <section id="home">
+                    <Stars offset={0}/>
                     <Home />
                 </section>
                 <section id="about">
+                    <Stars offset={1}/>
                     <About />
                 </section>
                 <section id="projects">e</section>

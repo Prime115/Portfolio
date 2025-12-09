@@ -9,6 +9,7 @@
 
 section {
   height: 40vw; /* each section fills the screen */
+  margin-bottom:5vw;
 }
 
 .logo {

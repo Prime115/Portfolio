@@ -22,7 +22,6 @@ body {
     height: 100vh;         /* Full height of the viewport */
     pointer-events: none;  /* Lets clicks pass through, so stars don’t block interactions */
     z-index: 0;            /* Makes sure stars stay behind your main content */
-    overflow: hidden;      /* Prevent stars from spilling outside the container */
 }
 
 
@@ -33,13 +32,14 @@ body {
     100% { opacity: 0.2; }
 }
 .falling-star {
-    position: absolute;
+    position: fixed;
     width: 2px;         /* tjocklek på stjärnfall */
     height: 80px;       /* längd på stjärnfall */
     background: linear-gradient(#d9d9d9, transparent);
     opacity: 0;
     transform: rotate(135deg); /* diagonal riktning */
     pointer-events: none;
+    z-index:0;
 }
 
 @keyframes fall {

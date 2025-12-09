@@ -2,9 +2,14 @@
     display: inline-block;
     margin-left: 2px;
     animation: blink 1s infinite;
+
 }
 .cursor.typing {
     animation: none; /* turns off blinking while typing */
+}
+.typing-text {
+    font-family: "Montserrat", Avenir, Helvetica, Arial, sans-serif;
+
 }
 @keyframes blink {
     0%, 50% { opacity: 1; }
