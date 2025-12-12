@@ -5,7 +5,7 @@ function NavBar() {
         <header>
             <nav className="navbar">
                 <div className="item">
-                    <a className="nav-link" href="#home">Omar Lundgren</a>
+                    <a className="nav-link" href="#root">Omar Lundgren</a>
                 </div>
                 <div className="item">
                     <a className="nav-link" href="#about">About</a>

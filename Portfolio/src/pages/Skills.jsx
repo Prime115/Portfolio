@@ -27,7 +27,6 @@ export default function Skills() {
             start: "2023-09-01",
             end: "2028-06-01",
             gradient: "linear-gradient(90deg,#AC0000 0%, #FF7700 88%, #FFB200 100%)",
-
         },
         {
             title: "B.Sc. Computing Science",
@@ -36,13 +35,18 @@ export default function Skills() {
             gradient: "linear-gradient(90deg,#0034A6 0%, #1390D1 88%, #00E1FF 100%)",
         }
     ];
+    const technical_design = [
+        "React", "Web Development",
+        "C#", ".Net MVC", "Java", "SQL", "UX/UI", "Design Thinking", "CoDesign",
+    ]
+
 
     return(
 
         <div className="skills" ref={ref}>
             <h1 className={"skillsHeader"}> Skills and Expertise</h1>
             <div className="degreeContainer">
-                <h2 >Degrees</h2>
+                <h2>Degrees</h2>
                 <div className="degreeMap">
                     {degrees.map((deg,i) => {
                         const percentage = calculateProgress(deg.start, deg.end);
@@ -58,7 +62,16 @@ export default function Skills() {
                     );
                 })}</div>
             </div>
-            <div className="tools"></div>
+            <div className="technicalContainer">
+                <h2>Technical</h2>
+                <div className="technical">
+                    {technical_design.map((tool, i) =>(
+                        <div className="technicalCard" key={i}>
+                            {tool}
+                        </div>
+                    ))}
+                </div>
+            </div>
 
         </div>
 

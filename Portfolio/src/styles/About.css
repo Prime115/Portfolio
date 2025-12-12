@@ -29,10 +29,10 @@
     height: 17vw;
     width: 19vw;
     border-radius: 1.17vw;
-    background: linear-gradient(#1A1B25,#10121C) ;
+    background: linear-gradient(90deg, #1A1B25,#10121C) ;
     z-index: 100;
     display:grid;
-    box-shadow: -0.703vw -1.172vw 4.688vw rgba(47, 50, 61, 0.34);
+    box-shadow: -0.703vw -1.172vw 3.688vw rgba(47, 50, 61, 0.34);
     padding:0;
     justify-items: start; /* aligns children to the left in a grid */
     align-items: end;

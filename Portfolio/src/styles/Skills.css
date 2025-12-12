@@ -22,15 +22,51 @@
 }
 .degreeContainer h2 {
     grid-area: a;
+    justify-self: start;
+    font-size:1.8vw;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 .degreeMap{
     grid-area: b;
     height: 100%;
     display: grid;
-    grid-template-rows: 0.3fr 0.3fr;
+    grid-template-rows: 0.2fr 0.2fr;
 
 
 }
-.tools {
+.technicalContainer {
     grid-area: d;
+    display: grid;
+    grid-template-rows:0.3fr 1fr;
+
+    grid-template-areas: "a" "b";
+    padding-right:7.5vw;
+    width:40.7vw;
+    justify-self: end;
+    height: auto;
+}
+.technicalContainer h2 {
+    grid-area: a;
+    justify-self: start;
+    font-size:1.8vw;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+.technical {
+    grid-area: b;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    gap:1vw;
+    grid-auto-rows: 3.33vw;
+
+}
+.technicalCard{
+    background: linear-gradient(90deg, #1A1B25,#10121C) ;
+    border-radius:0.55vw;
+    height:3.33vw;
+    align-content: center;
+    color: #d9d9d9;
+    font-size: 1.11vw;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    z-index: 2;
+    box-shadow: -0.1vw -0.3vw 1vw rgba(47, 50, 61, 0.34);
 }

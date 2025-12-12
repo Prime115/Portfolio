@@ -24,6 +24,10 @@ function App() {
                     <Stars offset={2}/>
                     <Skills/>
                 </section>
+                <section id="projects">
+                    <Stars offset={3}/>
+                    e
+                </section>
 
 
             </main>

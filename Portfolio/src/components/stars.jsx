@@ -7,7 +7,7 @@ const count = columns * rows;
 
 export default function Stars( { offset = 0 }) {
     const {scrollY} = useScroll();
-    const y =useTransform(scrollY, [0,5000], [0,-220])
+    const y =useTransform(scrollY, [0,3000], [0,-220])
     const [starData, setStarData] = useState([]);
 
     useEffect(() => {
