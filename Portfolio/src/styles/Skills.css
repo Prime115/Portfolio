@@ -1,0 +1,36 @@
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    height: 100%;
+    grid-template-areas: "a b" "c d";
+}
+
+.skillsHeader {
+    margin-bottom: 0;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    grid-column: span 2;
+}
+.degreeContainer {
+    grid-area: c;
+    padding-left:7.5vw;
+    width:40.7vw;
+    display:grid;
+    grid-template-rows:0.3fr 1fr;
+    height:100%;
+    grid-template-areas: "a" "b";
+}
+.degreeContainer h2 {
+    grid-area: a;
+}
+.degreeMap{
+    grid-area: b;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 0.3fr 0.3fr;
+
+
+}
+.tools {
+    grid-area: d;
+}

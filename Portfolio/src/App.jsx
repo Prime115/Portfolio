@@ -4,6 +4,7 @@ import About from "./pages/About.jsx";
 import NavBar from "./components/NavBar.jsx";
 import Stars from "./components/stars.jsx";
 import FallingStar from "./components/fallingStar.jsx";
+import Skills from "./pages/Skills.jsx";
 
 function App() {
     return (
@@ -19,7 +20,10 @@ function App() {
                     <Stars offset={1}/>
                     <About />
                 </section>
-                <section id="projects">e</section>
+                <section id="skills">
+                    <Stars offset={2}/>
+                    <Skills/>
+                </section>
 
 
             </main>

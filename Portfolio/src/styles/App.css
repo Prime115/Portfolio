@@ -8,10 +8,12 @@
 
 
 section {
-  height: 40vw; /* each section fills the screen */
-  margin-bottom:5vw;
+  height: 41.17vw; /* each section fills the screen */
+  padding-top: 3vw;
 }
-
+#home {
+  padding: 0;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
